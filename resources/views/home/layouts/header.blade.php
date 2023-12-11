@@ -20,9 +20,17 @@
             <a class="nav-link {{ Request::is('/') ? 'menu-active' : '' }}" aria-current="page" href="/">Home</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link {{ Request::is('about') ? 'menu-active' : '' }}" href="/about">About</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
+        
 
           <li class="nav-item">
             <a class="nav-link {{ Request::is('services') ? 'menu-active' : '' }}" href="/kegiatan">Kegiatan</a>
